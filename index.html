@@ -1,0 +1,48 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+  </head>
+
+  <body>
+    <h1>Click the button to show Covid-19 statistics in Viet Nam</h1>
+    <button onclick="showStatistics()">
+      Show Covid-19 statistics in Viet Nam
+    </button>
+    <div class="container1">
+      <h2>Total statistics of Viet Nam</h2>
+      <ul class="list">
+        <li id="infected"></li>
+        <li id="recovered"></li>
+        <li id="deceased"></li>
+        <li id="treated"></li>
+      </ul>
+    </div>
+    <div class="container2">
+      <h2>Statistics of big cities</h2>
+      <div class="hanoi">
+        <h3>Ha Noi</h3>
+        <ul class="hanoi-list"></ul>
+      </div>
+      <div class="hcmcity">
+        <h3> Ho Chi Minh City</h3>
+      <ul class="hcmcity-list">
+
+      </ul>
+      </div>
+      <div class="danang">
+        <h3> Da Nang</h3>
+        <ul class="danang-list">
+
+        </ul>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
