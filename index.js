@@ -11,8 +11,6 @@ const getStatistics = async () => {
 
 const showStatistics = () => {
   getStatistics().then((data) => {
-    const danang = data.detail.findIndex((obj) => obj.name === "Đà Nẵng");
-    console.log(danang);
     document.querySelector(
       "#infected"
     ).innerHTML = `INFECTED: ${data.infected.toLocaleString()} people`;
